@@ -1,0 +1,26 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    min-width: 280px;
+    max-width: 100vw;
+}
