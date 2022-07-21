@@ -10,10 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <!--Custom Css-->
     <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/queries.css">
     <title>Yard Sale</title>
 
 </head>
 <body>
-    
+    <div class="login">
+        <div class="form-container">
+            <img class="logo" src="./src/static/Logos/logo_yard_sale.svg" alt="Logo Yard Sale">
+            <h1 class="login__title">Create a new password</h1>
+            <p class="login__subtitle" > Enter a new password for your account</p>
+            <form action="" class="form">
+                <label for="password" class="label label--password">Password</label>
+                <input type="password" class="input input--password" placeholder="********">
+                <label for="password" class="label label--password">Re-enter password</label>
+                <input type="password" class="input input--password" placeholder="********">
+
+                <input type="submit" value="Confirm" class="button login__button">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
