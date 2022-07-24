@@ -30,7 +30,7 @@ body{
 }
 
 /*Login*/
-.password, .email{
+.password, .email, .login{
     width: 100%;
     height: 100vh;
     display: grid;
@@ -50,6 +50,9 @@ body{
     width: 180px;
     margin-bottom: 80px;
     justify-self: center;
+}
+.login .logo{
+    margin-bottom: 48px;
 }
 .title{
     font-size: var(--lg);
@@ -82,6 +85,13 @@ width: 100%;
 .form{
     display: flex;
     flex-direction: column;
+}
+.form a{
+    text-decoration: none;
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    margin-bottom: 32px;
 }
 .label{
     font-size: var(--sm);
@@ -117,6 +127,17 @@ width: 100%;
     font-size: var(--md);
     font-weight: 500;
     height: 48px;
+}
+.button--secondary{
+    background-color: var(--white);
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+}
+.login .button--secondary{
+    position: absolute;
+    width: inherit;
+    bottom: 0;
+    margin-bottom: 32px;
 }
 .login__button{
     margin-top: 12px;
