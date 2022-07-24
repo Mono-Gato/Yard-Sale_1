@@ -30,7 +30,7 @@ body{
 }
 
 /*Login*/
-.login{
+.password{
     width: 100%;
     height: 100vh;
     display: grid;
@@ -46,13 +46,13 @@ body{
     margin-bottom: 80px;
     justify-self: center;
 }
-.login__title{
+.title{
     font-size: var(--lg);
     margin-bottom: 12px;
     text-align: center;
 
 }
-.login__subtitle{
+.subtitle{
     color: var(--dark);
     font-size: var(--md);
     font-weight: 300;
