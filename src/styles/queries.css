@@ -2,4 +2,8 @@
     .logo{
         display:none;
     }    
+    .login .button--secondary{
+        position: initial;
+        margin-bottom: 0;
+    }
 }

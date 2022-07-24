@@ -15,6 +15,22 @@
 
 </head>
 <body>
+    <div class="login">
+        <div class="form-container">
+            <img class="logo" src="./src/static/Logos/logo_yard_sale.svg" alt="Logo Yard Sale">
+            <form action="" class="form">
+                <label for="email" class="label label--email">Email address</label>
+                <input type="email" class="input input--email" placeholder="youremail@gmail.com">
+                <label for="password" class="label label--password">Password</label>
+                <input type="password" class="input input--password" placeholder="********">
+
+                <input type="submit" value="Log in" class="button login__button">
+
+                <a href="/">Forgot my password</a>
+            </form>
+            <button class="button button--secondary">Sign up</button>
+        </div>
+    </div>
     <div class="password" style="display:none;">
         <div class="form-container">
             <img class="logo" src="./src/static/Logos/logo_yard_sale.svg" alt="Logo Yard Sale">
@@ -30,7 +46,7 @@
             </form>
         </div>
     </div>
-    <div class="email">
+    <div class="email" style="display: none;">
         <div class="form-container">
             <img class="logo" src="./src/static/Logos/logo_yard_sale.svg" alt="Logo Yard Sale">
             <h1 class="title">Email has been sent!</h1>
