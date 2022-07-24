@@ -94,6 +94,11 @@ width: 100%;
     display: flex;
     flex-direction: column;
 }
+.value{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin-bottom: 32px;
+}
 .account .form{
     justify-content: space-between;
 }
@@ -111,6 +116,9 @@ width: 100%;
 .label{
     font-size: var(--sm);
     font-weight: 700;
+    margin-bottom: 8px;
+}
+.edit-account .label{
     margin-bottom: 8px;
 }
 .input{
@@ -152,6 +160,9 @@ width: 100%;
     position: absolute;
     width: inherit;
     bottom: 0;
+    margin-bottom: 32px;
+}
+.edit-account .button--secondary{
     margin-bottom: 32px;
 }
 .login__button{
