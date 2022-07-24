@@ -6,4 +6,8 @@
         position: initial;
         margin-bottom: 0;
     }
+    .account .form-container{
+        min-height: auto;
+        padding-top: 0;
+    }
 }
