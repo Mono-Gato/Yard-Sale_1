@@ -210,3 +210,40 @@ width: 100%;
     width: 32px;
     height: 32px;
 }
+/*desktop menu*/
+.menu--desktop{
+    width: 140px;
+    height: auto;
+    box-shadow: 0px 0px 6px rgba(199, 199, 199, .65);
+    border-radius: 4px;
+    padding: 20px;
+}
+.menu--desktop ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.menu--desktop li{
+    text-align: right;
+
+}
+.menu--desktop li a{
+    color: var(--dark);
+    font-size: var(--md);
+    margin-bottom: 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+}
+.menu--desktop li:last-child{
+    padding-top: 16px;
+    border-top: 1px solid var(--text-input-field);
+
+}
+.menu--desktop li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    font-weight: 700;
+    margin-bottom: 0;
+}
