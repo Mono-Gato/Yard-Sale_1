@@ -171,3 +171,130 @@ width: 100%;
 }
 
 
+/*home page*/
+.cards__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap:16px;
+    place-content: center;
+}
+.card{
+    width: 140px;
+}
+.card__image{
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.card__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.info__text p:nth-child(1){
+    font-weight: 700;
+    font-size: var(--md);
+    color: var(--black);
+}
+.info__text p:nth-child(2){
+    margin-top: 4px;
+    color: var(--dark);
+    font-size: var(--sm);
+}
+.info__image{
+    margin: 0;
+}
+.info__image img{
+    width: 32px;
+    height: 32px;
+}
+/*desktop menu*/
+.menu--desktop{
+    width: 140px;
+    height: auto;
+    box-shadow: 0px 0px 6px rgba(199, 199, 199, .65);
+    border-radius: 4px;
+    padding: 20px;
+}
+.menu--desktop ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.menu--desktop li{
+    text-align: right;
+
+}
+.menu--desktop li a{
+    color: var(--dark);
+    font-size: var(--md);
+    margin-bottom: 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+}
+.menu--desktop li:last-child{
+    padding-top: 16px;
+    border-top: 1px solid var(--text-input-field);
+
+}
+.menu--desktop li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+/*menu mobile*/
+.menu--mobile{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.menu--mobile .close{
+    position: absolute;
+    right: 24px;
+}
+.menu--mobile ul{
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+.menu--mobile ul:nth-child(1){
+    margin: 0;
+}
+.menu--mobile ul:nth-child(3){
+    margin:40px 0 0 0;
+}
+.menu--mobile ul:nth-child(1){
+    border-bottom: 1px solid var(--text-input-field);
+}
+.menu--mobile li{
+    margin-bottom: 24px;
+}
+.menu--mobile li a{
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: var(--md);
+
+}
+.menu--mobile .info__email{
+    font-size: var(--sm);
+    font-weight: 300;
+}
+.menu--mobile .info__sing-out{
+    font-size: var(--sm);
+    color: var(--hospital-green);
+}
+.menu__info li:first-child{
+    margin-bottom: 16px;
+}
+.menu__info li:last-child{
+    margin-bottom: 0;
+}
