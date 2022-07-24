@@ -10,4 +10,7 @@
         min-height: auto;
         padding-top: 0;
     }
+    .edit-account .button--secondary{
+        margin-bottom: 0;
+    }
 }
