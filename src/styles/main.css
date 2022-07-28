@@ -29,6 +29,13 @@ body{
     color:var(--dark);
     font-weight: 300;
 }
+/*Modifiers*/
+.hidden{
+    opacity: 0 ;
+}
+.inactive{
+    display: none;
+}
 /*Navbar*/
 .navbar{
     padding: 16px;
@@ -39,6 +46,14 @@ body{
     position: fixed;
     width: 100%;
     background-color: var(--white);
+}
+.navbar__menu-icon{
+    cursor: pointer;
+    transition: .25s ease-out all;
+    
+}
+.navbar__menu-icon.active{
+    opacity: .5;
 }
 .navbar__logo{
     width: 100px;
@@ -67,7 +82,7 @@ body{
     font-size: var(--sm);
     border-radius: 8px;
     padding: 8px;
-
+    transition: .3s ease-out all;
 }
 .navbar-left li a:hover, .navbar-right li a:hover{
     border: 1px solid var(--hospital-green);
@@ -86,7 +101,10 @@ body{
     transform: rotate(90deg);
     margin-left: 8px;
     width: 5px;
-
+    transition: .3s ease-out all;
+}
+.navbar__email.active img{
+    transform: rotate(270deg);
 }
 .navbar__cart{
     position: relative;
@@ -296,13 +314,22 @@ width: 100%;
 }
 /*desktop menu*/
 .menu--desktop{
+    position: absolute;
+    background-color: var(--white);
     width: 140px;
     height: auto;
     box-shadow: 0px 0px 6px rgba(199, 199, 199, .65);
     border-radius: 4px;
     padding: 20px;
+    z-index: 6;
+    right: 52px;
+    top: 50px;
+    opacity: 1;
+    transition: .3s ease-out all;
+    
 }
 .menu--desktop ul{
+    display: block;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -335,11 +362,21 @@ width: 100%;
 .menu--mobile{
     padding: 24px;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
-}
+    width: 100%;
 
+    flex-direction: column;
+    top: 60px;
+    left: 0px;
+    justify-content: space-between;
+    z-index: 2;
+    position: absolute;
+    background-color: var(--white);
+    transform: translatey(0);
+    transition: .3s ease-in-out all;
+}
+.menu--mobile.inactive{
+    transform: translatey(-100%);
+}
 .menu--mobile .close{
     position: absolute;
     right: 24px;
@@ -348,6 +385,7 @@ width: 100%;
     padding: 0;
     margin: 24px 0 0;
     list-style: none;
+    display: block;
 }
 .menu--mobile ul:nth-child(1){
     margin: 0;
@@ -663,3 +701,4 @@ width: 100%;
 .product-detail__button img{
     margin-right: 8px;
 }
+

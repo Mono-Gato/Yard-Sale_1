@@ -53,13 +53,21 @@
                     </div>
                 </li>
             </ul>
-           
+        </div>
+        <div class="menu--desktop inactive" >
+            <ul>
+                <li><a href="/">My orders</a></li>
+                <li><a href="/">My account</a></li>
+                <li><a href="/">Sign out</a></li>
+            </ul>
         </div>
     </nav>
-    <div class="menu--mobile" style="display: none;">
-        <a href="/" class="close">
+    <div class="menu--mobile inactive">
+        <!--
+        <a class="close">
             <img src="./src/static/Icons/icon_close.png" alt="">
         </a>
+        -->
         <div>
             <ul>
                 <li><a href="/">CATEGORIES</a></li>
@@ -85,14 +93,7 @@
             </li>
         </ul>
     </div>
-    <div class="menu--desktop" style="display:none ;">
-        <ul>
-            <li><a href="/">My orders</a></li>
-            <li><a href="/">My account</a></li>
-            <li><a href="/">Sign out</a></li>
-        </ul>
-    </div>
-    <aside class="shopping-cart">
+    <aside class="shopping-cart" style="display: none;">
         <div>
             <div class="shopping-cart__back">
                 <img src="./src/static/Icons/flechita.svg" alt="">
@@ -255,7 +256,7 @@
             </button>
         </div>
     </div>
-    <section class="main__container" style="">
+    <section class="main__container" >
         <div class="cards__container">
             <div class="card">
                 <img src="https://images.pexels.com/photos/5465162/pexels-photo-5465162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="card__image">
@@ -495,5 +496,6 @@
             
         </div>
     </div>
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>
