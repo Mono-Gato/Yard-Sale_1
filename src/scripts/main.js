@@ -16,8 +16,12 @@ triggerMenuNavbarMobile.addEventListener('click', toggleMobileMenu);
 function toggleMobileMenu() {
     const isAsideShoppingCartClosed = asideShoppingCart.classList.contains('inactive')
 
-    if (!isAsideShoppingCartClosed) {
+    const isAsideProductDetailClosed = asideProductDetail.classList.contains('inactive')
+
+    if (!isAsideShoppingCartClosed || !isAsideProductDetailClosed) {
         asideShoppingCart.classList.add('inactive')
+        asideProductDetail.classList.add('inactive')
+
         menuNavbarMobile.classList.toggle('inactive');
         triggerMenuNavbarMobile.classList.toggle('active')
     } else {
@@ -26,22 +30,26 @@ function toggleMobileMenu() {
     }
 }
 
-const tiggerAsideShoppingCart = document.querySelector('.navbar__cart');
+const triggerAsideShoppingCart = document.querySelector('.navbar__cart');
 const triggerBackAsideShoppingCart = document.querySelector('.shopping-cart__back')
 const asideShoppingCart = document.querySelector('.shopping-cart');
 
-tiggerAsideShoppingCart.addEventListener('click', toggleShoppingCart);
+triggerAsideShoppingCart.addEventListener('click', toggleShoppingCart);
 
 function toggleShoppingCart() {
     const isMobileMenuClosed = menuNavbarMobile.classList.contains('inactive')
     const isDesktopMenuClosed = menuNavbarDesktop.classList.contains('inactive')
 
-    if (!isMobileMenuClosed || !isDesktopMenuClosed) {
+    const isAsideProductDetailClosed = menuNavbarDesktop.classList.contains('inactive')
+
+    if (!isMobileMenuClosed || !isDesktopMenuClosed || isAsideProductDetailClosed) {
         menuNavbarMobile.classList.add('inactive');
         triggerMenuNavbarMobile.classList.remove('active');
 
         menuNavbarDesktop.classList.add('inactive')
         triggerMenuNavbarDesktop.classList.remove('active')
+
+        asideProductDetail.classList.add('inactive')
 
         asideShoppingCart.classList.toggle('inactive');
     } else {
@@ -117,3 +125,14 @@ productList.push({
 })
 
 renderProducts(productList)
+
+
+//product detail
+const asideProductDetail = document.querySelector('.product-detail')
+const triggerCloseAsideProductDetail = document.querySelector('.product-detail__close')
+
+triggerCloseAsideProductDetail.addEventListener('click', toggleBackProductDetail);
+
+function toggleBackProductDetail() {
+    asideProductDetail.classList.add('inactive');
+}
