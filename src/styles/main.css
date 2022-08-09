@@ -307,6 +307,7 @@ width: 100%;
 }
 .info__image{
     margin: 0;
+    cursor: pointer;
 }
 .info__image img{
     width: 32px;
@@ -645,6 +646,7 @@ width: 100%;
 }
 /*product detail*/
 .product-detail{
+    display: block;
     width: 100%;
     background: var(--white);
     position: fixed;
@@ -653,6 +655,11 @@ width: 100%;
     min-height: calc(100vh - 60px);
     box-shadow: -2px 5px 6px rgba(199, 199, 199, .65);
     z-index: 8;
+    transform: translateX(0);
+    transition: .25s ease-out all;
+}
+.product-detail.inactive{
+    transform: translateX(100%);
 }
 .product-detail .close{
     cursor: pointer;
