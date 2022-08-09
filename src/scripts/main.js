@@ -105,6 +105,9 @@ function renderProducts(arr) {
     
         productCard.appendChild(productCardImg)
         productCard.appendChild(productCardInfo)
+        productCard.addEventListener('click', openAsideProductDetail)
+
+
     
         cardsContainer.appendChild(productCard)
     }
@@ -131,8 +134,13 @@ renderProducts(productList)
 const asideProductDetail = document.querySelector('.product-detail')
 const triggerCloseAsideProductDetail = document.querySelector('.product-detail__close')
 
-triggerCloseAsideProductDetail.addEventListener('click', toggleBackProductDetail);
+triggerCloseAsideProductDetail.addEventListener('click', closeAsideProductDetail);
 
-function toggleBackProductDetail() {
+function closeAsideProductDetail() {
     asideProductDetail.classList.add('inactive');
+}
+
+function openAsideProductDetail() {
+    asideProductDetail.classList.remove('inactive');
+    asideShoppingCart.classList.add('inactive')
 }

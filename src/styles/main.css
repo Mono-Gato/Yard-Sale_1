@@ -307,6 +307,7 @@ width: 100%;
 }
 .info__image{
     margin: 0;
+    cursor: pointer;
 }
 .info__image img{
     width: 32px;
@@ -645,6 +646,7 @@ width: 100%;
 }
 /*product detail*/
 .product-detail{
+    display: block;
     width: 100%;
     background: var(--white);
     position: fixed;
